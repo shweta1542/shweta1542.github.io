@@ -1,0 +1,219 @@
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center; /* Center-align text content */
+  font-size: 1.5em; /* Adjust the font size as needed */
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+  #hero {
+    
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0a0909;
+    padding: 40px;
+    
+  }
+  
+  #hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+  }
+  
+  #hero button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Features Section Styles */
+  
+  
+  /* Testimonials Section Styles */
+  #testimonials {
+    padding: 12px 0;
+  }
+  
+  .testimonial {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Contact Section Styles */
+  #contact {
+    padding: 50px 0;
+    background-color: #eaeaea;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type='submit'] {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    margin: 0 10px;
+  }
+
+ /* Contact Section Styles */
+#contact {
+    padding: 50px 0;
+    background-color: #eaeaea;
+    text-align: center; /* Center-align text content */
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add padding to the sides */
+    box-sizing: border-box; /* Include padding in the width */
+  }
+  
+  #contact h2 {
+    margin-bottom: 30px;
+  }
+  
+  /* Form Styles */
+  form {
+    text-align: left; /* Reset text alignment for form fields */
+  }
+
+  
+  video {
+    display: block;
+    margin: 0 auto; /* Center the video horizontally */
+    max-width: 100%; /* Ensure the video does not exceed its container */
+    border-radius: 8px; /* Rounded corners for the video player */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the video player */
+  }
+  
+  /* Adjustments for mobile responsiveness */
+  
+  @media (max-width: 768px) {
+    video {
+      width: 100%; /* Full width on smaller screens */
+      border-radius: 0; /* Remove border-radius on smaller screens */
+      box-shadow: none; /* Remove shadow on smaller screens */
+      padding: auto;
+    }
+  }
+  
+
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust the alignment of flex items */
+  }
+  
+  .feature {
+    flex: 0 0 calc(50% - 20px); /* Two features in a row with a gap */
+    margin: 10px; /* Add spacing between features */
+    text-align: center; /* Center align the content */
+    
+  }
+
+  
+  .feature img {
+    max-width: 70%; /* Ensure images fit within their containers */
+  }
+  
+  
+  button[type='submit'],
+#hero button {
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+button[type='submit']:hover,
+#hero button:hover {
+  background-color: #ff8533; /* Change background color on hover */
+}
+
+/* Animation for the hero section */
+#hero {
+  animation-name: fadeInUp; /* Name of the animation */
+  animation-duration: 1s; /* Duration of the animation */
+  animation-timing-function: ease; /* Timing function */
+  animation-fill-mode: forwards; /* Keep the final state of the animation */
+  opacity: 0; /* Initial opacity */
+}
+
+/* Keyframes for the fadeInUp animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Initial position below by 50px */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position at default position */
+  }
+}
+
+.feature {
+    transition: transform 0.3s ease; /* Smooth transition for transform property */
+  }
+  
+  .feature:hover {
+    transform: scale(1.1); /* Scale up the feature on hover */
+  }
